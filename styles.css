@@ -1,0 +1,108 @@
+*{
+    font-family: 'lato', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vw;
+    width: 100vw;
+    flex-direction: column;   
+    align-items: center;
+    justify-content: center;
+    background-color: radial-gradient(circle, rgba(238,174,202,1) 25%, rgba(148,187,233,1) 100%);
+    background-image: url(michal-bielejewski.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #383838;
+}
+
+.container{
+    width: 400px;
+    height: 300px;
+    border: 1px solid white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.search-button{
+    display: inline;
+}
+
+#county-number{
+    font-size: 1.3rem;     
+    color: #383838; 
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.county-name{
+    width: 350px;    
+    height: 100px;
+    border: solid 1px white;
+    margin: auto;
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    color: #383838;
+}
+
+#button{
+    font-size: 1rem;
+    background: #E27D60;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-weight: 400;
+}
+
+#button:active{
+    transform: scale(0.9);
+    background: hsl(13, 69%, 80%);
+}
+
+#input-name{
+    height: 30px;
+    width: 250px;
+    margin-top: 20px;
+    font-size: 1rem;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #F2DEDC;
+}
+
+#input-name:focus{
+    outline: none
+}
+
+#submit{
+    font-size: 1rem;
+    color: #fff;
+    background: #E27D60;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3 ease;
+}
+
+#submit:active{
+    transform: scale(0.9);
+}
+
+.county-name.show{
+    background: #F2DEDC;
+}
